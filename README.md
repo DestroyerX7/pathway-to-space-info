@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pathway To Space Info
+
+An educational web application dedicated to making the history and science of space exploration accessible to everyone — from curious beginners to lifelong enthusiasts.
+
+## About
+
+Pathway To Space Info covers the full arc of human spaceflight and astronomical discovery, including:
+
+- The **Apollo program** and humanity's first steps on the Moon
+- The **Artemis program** and the return to lunar exploration
+- The **Space Shuttle** era and its legacy
+- Life and research aboard the **International Space Station**
+- Our **Solar System** and the wider **Universe**
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) — React framework with App Router
+- [Tailwind CSS](https://tailwindcss.com/) — Utility-first styling
+- [shadcn/ui](https://ui.shadcn.com/) — Component library
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+/app
+  /about          # About page
+  /learn          # Topic index page
+    /apollo       # Apollo program
+    /artemis      # Artemis program
+    /space-shuttle
+    /iss          # International Space Station
+    /solar-system
+    /universe
+/components
+  Header.tsx      # Site-wide navigation
+/public           # Static images and assets
+```
 
-## Learn More
+## Scripts
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Command         | Description              |
+| --------------- | ------------------------ |
+| `npm run dev`   | Start development server |
+| `npm run build` | Build for production     |
+| `npm run start` | Run production build     |
+| `npm run lint`  | Lint the codebase        |
