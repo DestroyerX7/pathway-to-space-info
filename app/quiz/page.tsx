@@ -51,9 +51,9 @@ export default function Quiz() {
 
         numIncorrect++;
       }
-
-      console.log(`${10 - numIncorrect}/${10}`);
     }
+
+    console.log(`${10 - numIncorrect}/${10}`);
   };
 
   return (

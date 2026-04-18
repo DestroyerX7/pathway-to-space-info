@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
-import { LucideArrowRight, LucideCircleArrowRight } from "lucide-react";
+import { LucideCircleArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -30,7 +30,17 @@ export default function Home() {
       </div>
 
       <div className="px-64 py-32 flex gap-4">
-        <div className="flex-1">
+        <div className="flex-1 space-y-4">
+          <div className="relative h-64">
+            <Image
+              src="/apollo-11-launch.jpg"
+              alt="Apollo 11 launch"
+              fill
+              priority
+              className="object-cover"
+            />
+          </div>
+
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint
             deleniti inventore omnis quaerat? Eos veritatis sequi alias minus
@@ -42,7 +52,17 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex-1">
+        <div className="flex-1 space-y-4">
+          <div className="relative h-64">
+            <Image
+              src="/iss.jpg"
+              alt="ISS"
+              fill
+              priority
+              className="object-cover"
+            />
+          </div>
+
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint
             deleniti inventore omnis quaerat? Eos veritatis sequi alias minus
@@ -54,7 +74,17 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex-1">
+        <div className="flex-1 space-y-4">
+          <div className="relative h-64">
+            <Image
+              src="/mars.jpg"
+              alt="Mars"
+              fill
+              priority
+              className="object-cover"
+            />
+          </div>
+
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint
             deleniti inventore omnis quaerat? Eos veritatis sequi alias minus
@@ -88,7 +118,7 @@ export default function Home() {
 
           <Link
             href="/learn/artemis"
-            className="flex items-center gap-2 hover:-translate-y-0.5 transition-transform"
+            className="inline-flex items-center gap-2 hover:-translate-y-0.5 transition-transform"
           >
             <p className="text-xl font-bold">Moon to Mars</p>
             <LucideCircleArrowRight color="#FC3D21" />
@@ -99,37 +129,65 @@ export default function Home() {
       <footer className="p-16 flex gap-4">
         <div className="flex flex-col">
           <Button variant="link" asChild>
-            <Link href="https://www.nasa.gov/" target="_blank">
+            <Link
+              href="https://www.nasa.gov/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               NASA
             </Link>
           </Button>
           <Button variant="link" asChild>
-            <Link href="https://www.spacex.com/" target="_blank">
+            <Link
+              href="https://www.spacex.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               SpaceX
             </Link>
           </Button>
           <Button variant="link" asChild>
-            <Link href="https://www.esa.int/" target="_blank">
+            <Link
+              href="https://www.esa.int/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               ESA
             </Link>
           </Button>
           <Button variant="link" asChild>
-            <Link href="https://www.planetary.org/" target="_blank">
+            <Link
+              href="https://www.planetary.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               The Planetary Society
             </Link>
           </Button>
           <Button variant="link" asChild>
-            <Link href="https://www.blueorigin.com/" target="_blank">
+            <Link
+              href="https://www.blueorigin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Blue Origin
             </Link>
           </Button>
           <Button variant="link" asChild>
-            <Link href="https://www.ulalaunch.com/" target="_blank">
+            <Link
+              href="https://www.ulalaunch.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               ULA
             </Link>
           </Button>
           <Button variant="link" asChild>
-            <Link href="https://www.space.com/" target="_blank">
+            <Link
+              href="https://www.space.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Space.com
             </Link>
           </Button>

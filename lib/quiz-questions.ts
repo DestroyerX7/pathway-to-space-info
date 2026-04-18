@@ -8,7 +8,7 @@ export const quizQuestions: QuizQuestion[] = [
   // Apollo Program
   {
     question: "What year was the Apollo 11 moon landing?",
-    answers: ["1972", "1969", "1958", "1962"],
+    answers: ["1972", "1969", "1958", "1961"],
     correctAnswerIndex: 1,
   },
   {
@@ -351,5 +351,256 @@ export const quizQuestions: QuizQuestion[] = [
       "The Kuiper Belt",
     ],
     correctAnswerIndex: 2,
+  },
+
+  // The Universe
+  {
+    question: "How old is the universe?",
+    answers: [
+      "8.6 billion years",
+      "13.8 billion years",
+      "20 billion years",
+      "4.6 billion years",
+    ],
+    correctAnswerIndex: 1,
+  },
+  {
+    question:
+      "What is the name of the oldest light we can observe, left over from the early universe?",
+    answers: [
+      "The Hubble Constant",
+      "Dark radiation",
+      "The Cosmic Microwave Background",
+      "Hawking radiation",
+    ],
+    correctAnswerIndex: 2,
+  },
+  {
+    question:
+      "What is the name of the supermassive black hole at the center of the Milky Way?",
+    answers: ["Cygnus X-1", "Sagittarius A*", "M87*", "NGC 1277"],
+    correctAnswerIndex: 1,
+  },
+  {
+    question: "Approximately how many galaxies are in the observable universe?",
+    answers: ["2 million", "200 billion", "2 trillion", "400 billion"],
+    correctAnswerIndex: 2,
+  },
+  {
+    question: "What is the name of the large galaxy nearest to the Milky Way?",
+    answers: [
+      "Triangulum Galaxy",
+      "Large Magellanic Cloud",
+      "Andromeda Galaxy",
+      "Whirlpool Galaxy",
+    ],
+    correctAnswerIndex: 2,
+  },
+  {
+    question:
+      "What percentage of the universe's total energy content is ordinary matter?",
+    answers: ["27%", "68%", "50%", "5%"],
+    correctAnswerIndex: 3,
+  },
+  {
+    question: "What is a light-year?",
+    answers: [
+      "The time it takes light to travel from the Sun to Earth",
+      "The distance light travels in one year",
+      "One billion kilometers",
+      "The length of one solar cycle",
+    ],
+    correctAnswerIndex: 1,
+  },
+  {
+    question: "What type of star is our Sun?",
+    answers: ["Red dwarf", "Blue giant", "Yellow dwarf", "Neutron star"],
+    correctAnswerIndex: 2,
+  },
+  {
+    question:
+      "What is the boundary around a black hole beyond which nothing can escape?",
+    answers: [
+      "The photon sphere",
+      "The Schwarzschild limit",
+      "The event horizon",
+      "The singularity",
+    ],
+    correctAnswerIndex: 2,
+  },
+  {
+    question:
+      "Which telescope produced the first direct image of a black hole in 2019?",
+    answers: [
+      "Hubble Space Telescope",
+      "James Webb Space Telescope",
+      "Chandra X-ray Observatory",
+      "Event Horizon Telescope",
+    ],
+    correctAnswerIndex: 3,
+  },
+  {
+    question: "What is dark energy thought to be causing?",
+    answers: [
+      "The slowing of the universe's expansion",
+      "The accelerating expansion of the universe",
+      "The formation of black holes",
+      "The rotation of galaxies",
+    ],
+    correctAnswerIndex: 1,
+  },
+  {
+    question:
+      "What is the term for a massive stellar explosion at the end of a large star's life?",
+    answers: ["Pulsar", "Quasar", "Supernova", "Nova"],
+    correctAnswerIndex: 2,
+  },
+  {
+    question: "What kind of galaxy is the Milky Way?",
+    answers: [
+      "Elliptical galaxy",
+      "Irregular galaxy",
+      "Barred spiral galaxy",
+      "Lenticular galaxy",
+    ],
+    correctAnswerIndex: 2,
+  },
+  {
+    question: "How far away is the Andromeda Galaxy from the Milky Way?",
+    answers: [
+      "100,000 light-years",
+      "2.5 million light-years",
+      "520 million light-years",
+      "400,000 light-years",
+    ],
+    correctAnswerIndex: 1,
+  },
+  {
+    question:
+      "What do scientists call a planet orbiting a star other than our Sun?",
+    answers: [
+      "Rogue planet",
+      "Dwarf planet",
+      "Exoplanet",
+      "Trans-Neptunian object",
+    ],
+    correctAnswerIndex: 2,
+  },
+  {
+    question:
+      "Which NASA space telescope discovered thousands of exoplanets by monitoring star brightness?",
+    answers: ["Spitzer", "Kepler", "Chandra", "Fermi"],
+    correctAnswerIndex: 1,
+  },
+  {
+    question:
+      "What is the name of the dense stellar remnant left behind after a low-mass star dies?",
+    answers: ["Neutron star", "Black hole", "White dwarf", "Pulsar"],
+    correctAnswerIndex: 2,
+  },
+  {
+    question:
+      "What is the name of the supercluster that contains the Milky Way?",
+    answers: [
+      "Virgo Supercluster",
+      "Laniakea Supercluster",
+      "Perseus-Pisces Supercluster",
+      "Coma Supercluster",
+    ],
+    correctAnswerIndex: 1,
+  },
+  {
+    question: "What was the first space telescope launched by NASA, in 1990?",
+    answers: [
+      "James Webb Space Telescope",
+      "Spitzer Space Telescope",
+      "Hubble Space Telescope",
+      "Chandra X-ray Observatory",
+    ],
+    correctAnswerIndex: 2,
+  },
+  {
+    question:
+      "Which Voyager spacecraft is the most distant human-made object from Earth?",
+    answers: ["Voyager 2", "Voyager 1", "Pioneer 10", "New Horizons"],
+    correctAnswerIndex: 1,
+  },
+  {
+    question:
+      "What elements were primarily produced in the first few minutes after the Big Bang?",
+    answers: [
+      "Carbon, oxygen, and nitrogen",
+      "Iron, nickel, and gold",
+      "Hydrogen, helium, and trace lithium",
+      "Silicon, magnesium, and sulfur",
+    ],
+    correctAnswerIndex: 2,
+  },
+  {
+    question:
+      "Which moon of Jupiter is thought to have a subsurface liquid water ocean?",
+    answers: ["Io", "Ganymede", "Callisto", "Europa"],
+    correctAnswerIndex: 3,
+  },
+  {
+    question: "How long does light from the Sun take to reach Earth?",
+    answers: [
+      "About 8 minutes",
+      "About 1 hour",
+      "About 1 second",
+      "About 30 minutes",
+    ],
+    correctAnswerIndex: 0,
+  },
+  {
+    question:
+      "What is the name of Saturn's moon that has lakes of liquid methane on its surface?",
+    answers: ["Enceladus", "Titan", "Rhea", "Dione"],
+    correctAnswerIndex: 1,
+  },
+  {
+    question:
+      "What is the approximate diameter of the observable universe in light-years?",
+    answers: [
+      "13.8 billion light-years",
+      "100 billion light-years",
+      "93 billion light-years",
+      "1 trillion light-years",
+    ],
+    correctAnswerIndex: 2,
+  },
+  {
+    question:
+      "What spacecraft gave us the first close-up images of Pluto in 2015?",
+    answers: ["Cassini", "Voyager 1", "New Horizons", "Pioneer 11"],
+    correctAnswerIndex: 2,
+  },
+  {
+    question:
+      "What is the name for the invisible substance that makes up about 27% of the universe?",
+    answers: ["Antimatter", "Dark energy", "Dark matter", "Neutrino matter"],
+    correctAnswerIndex: 2,
+  },
+  {
+    question:
+      "What is the name of the invisible belt of icy bodies that Pluto belongs to?",
+    answers: [
+      "The Oort Cloud",
+      "The Asteroid Belt",
+      "The Kuiper Belt",
+      "The Van Allen Belt",
+    ],
+    correctAnswerIndex: 2,
+  },
+  {
+    question:
+      "What is the process by which stars generate energy by combining atomic nuclei?",
+    answers: [
+      "Nuclear fission",
+      "Nuclear fusion",
+      "Radioactive decay",
+      "Gravitational compression",
+    ],
+    correctAnswerIndex: 1,
   },
 ];
