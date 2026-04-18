@@ -16,21 +16,36 @@ export default function Quiz() {
     Array(10).fill(""),
   );
 
-  useEffect(() => {
+  const [submitted, setSubmitted] = useState(false);
+  const [numCorrect, setNumCorrect] = useState(0);
+
+  const randomizeQuizQuestions = () => {
     const randomQuizQuestions = quizQuestions
       .toSorted((_) => Math.random() - 0.5)
       .slice(0, 10);
 
     setSelectedQuizQuestions(randomQuizQuestions);
+  };
+
+  useEffect(() => {
+    randomizeQuizQuestions();
   }, []);
 
   const selectAnswer = (answer: string, index: number) => {
+    if (submitted) {
+      return;
+    }
+
     const updatedSelectedAnswers = selectedAnswers;
     updatedSelectedAnswers[index] = answer;
     setSelectedAnswers(updatedSelectedAnswers);
   };
 
   const submit = () => {
+    if (submitted) {
+      return;
+    }
+
     let numIncorrect = 0;
 
     for (let i = 0; i < selectedAnswers.length; i++) {
@@ -40,20 +55,12 @@ export default function Quiz() {
           selectedQuizQuestions[i].correctAnswerIndex
         ]
       ) {
-        console.log("Incorrect: " + selectedAnswers[i]);
-        console.log(
-          "Correct: " +
-            selectedQuizQuestions[i].answers[
-              selectedQuizQuestions[i].correctAnswerIndex
-            ],
-        );
-        console.log();
-
         numIncorrect++;
       }
     }
 
-    console.log(`${10 - numIncorrect}/${10}`);
+    setSubmitted(true);
+    setNumCorrect(10 - numIncorrect);
   };
 
   return (
@@ -63,11 +70,43 @@ export default function Quiz() {
       <div className="p-4 space-y-16">
         {selectedQuizQuestions.map((quizQuestion, i) => (
           <div key={quizQuestion.question} className="space-y-4">
-            <h1>{quizQuestion.question}</h1>
+            <div className="flex justify-between">
+              <h1>{quizQuestion.question}</h1>
 
-            <RadioGroup onValueChange={(answer) => selectAnswer(answer, i)}>
+              {submitted && (
+                <p>
+                  {selectedAnswers[i] ==
+                  quizQuestion.answers[quizQuestion.correctAnswerIndex]
+                    ? "1"
+                    : "0"}
+                  /1
+                </p>
+              )}
+            </div>
+
+            <RadioGroup
+              onValueChange={(answer) => selectAnswer(answer, i)}
+              disabled={submitted}
+            >
               {quizQuestion.answers.map((answer) => (
-                <div key={answer} className="flex items-center gap-3">
+                <div
+                  key={answer}
+                  className={
+                    "flex items-center gap-4 p-4 rounded border " +
+                    (submitted &&
+                    answer ==
+                      quizQuestion.answers[quizQuestion.correctAnswerIndex]
+                      ? "bg-green-950 border-green-700"
+                      : submitted &&
+                          answer == selectedAnswers[i] &&
+                          answer !=
+                            quizQuestion.answers[
+                              quizQuestion.correctAnswerIndex
+                            ]
+                        ? "bg-red-950 border-red-700"
+                        : "")
+                  }
+                >
                   <RadioGroupItem
                     value={answer}
                     id={quizQuestion.question + answer}
@@ -81,9 +120,28 @@ export default function Quiz() {
           </div>
         ))}
 
-        <Button className="cursor-pointer" onClick={submit}>
-          Submit
-        </Button>
+        <div className="flex gap-4">
+          <Button className="cursor-pointer" onClick={submit}>
+            Submit
+          </Button>
+
+          {submitted && (
+            <Button
+              variant="secondary"
+              className="cursor-pointer"
+              onClick={() => {
+                randomizeQuizQuestions();
+                setSelectedAnswers(Array(10).fill(""));
+                setNumCorrect(0);
+                setSubmitted(false);
+              }}
+            >
+              Retry
+            </Button>
+          )}
+        </div>
+
+        {submitted && <p>{numCorrect}/10</p>}
       </div>
     </>
   );
