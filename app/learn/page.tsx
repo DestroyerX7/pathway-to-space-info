@@ -1,4 +1,6 @@
 import Header from "@/components/Header";
+import { Separator } from "@/components/ui/separator";
+import { CircleArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -61,16 +63,13 @@ export default function Learn() {
       <main className="min-h-screen bg-background text-foreground px-8 py-16">
         {/* Page heading */}
         <div className="max-w-6xl mx-auto mb-16">
-          <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-3">
+          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">
             Knowledge Base
           </p>
-          <h1
-            className="text-6xl font-light tracking-tight"
-            style={{ fontFamily: "'Georgia', serif" }}
-          >
+          <h1 className="text-6xl font-light tracking-tight font-serif mb-4">
             Explore
           </h1>
-          <div className="mt-4 h-px w-24 bg-border" />
+          <Separator />
         </div>
 
         {/* Grid */}
@@ -89,19 +88,17 @@ export default function Learn() {
                   fill
                   priority
                   className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-background via-background/20 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-90" />
               </div>
 
               {/* Text pinned to bottom */}
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-1">
+                <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">
                   {topic.year}
                 </p>
-                <h2
-                  className="text-2xl font-light mb-1"
-                  style={{ fontFamily: "'Georgia', serif" }}
-                >
+                <h2 className="text-2xl font-light mb-1 font-serif">
                   {topic.label}
                 </h2>
                 <p className="text-sm text-muted-foreground leading-snug">
@@ -110,10 +107,10 @@ export default function Learn() {
 
                 <div className="mt-4 flex items-center gap-2 text-xs uppercase tracking-widest text-muted-foreground group-hover:text-foreground transition-colors duration-300">
                   <span>Discover</span>
-                  <span className="inline-block w-0 group-hover:w-6 overflow-hidden transition-all duration-300 ease-in-out h-px bg-foreground" />
-                  <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    →
-                  </span>
+                  <CircleArrowRight
+                    size={16}
+                    className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  />
                 </div>
               </div>
             </Link>

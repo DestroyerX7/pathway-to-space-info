@@ -1,6 +1,6 @@
 # Pathway To Space Info
 
-An educational web application dedicated to making the history and science of space exploration accessible to everyone — from curious beginners to lifelong enthusiasts.
+An educational website dedicated to making the history and science of space exploration accessible to everyone — from curious beginners to lifelong enthusiasts.
 
 ## About
 

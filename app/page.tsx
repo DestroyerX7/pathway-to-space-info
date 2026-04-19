@@ -18,7 +18,7 @@ export default function Home() {
           className="object-cover -z-50"
         />
 
-        <div className="text-center space-y-4">
+        <div className="text-center space-y-4 px-8">
           <h1 className="text-6xl font-bold">Pathway to all things space</h1>
 
           <p className="text-xl">Discover your interest in the cosmos</p>
@@ -29,15 +29,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-8 py-32 flex flex-col gap-16 xl:flex-row xl:gap-4">
-        <div className="flex-1 space-y-4">
-          <div className="relative h-64">
+      <section className="mx-auto max-w-6xl px-8 py-16 grid grid-cols-1 gap-16 lg:grid-cols-3 lg:gap-4">
+        <div className="space-y-4">
+          <div className="relative aspect-4/3">
             <Image
               src="/apollo-11-launch.jpg"
               alt="Apollo 11 launch"
               fill
               priority
               className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 33vw"
             />
           </div>
 
@@ -55,14 +56,15 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex-1 space-y-4">
-          <div className="relative h-64">
+        <div className="space-y-4">
+          <div className="relative aspect-4/3">
             <Image
               src="/iss.jpg"
               alt="ISS"
               fill
               priority
               className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 33vw"
             />
           </div>
 
@@ -80,14 +82,15 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex-1 space-y-4">
-          <div className="relative h-64">
+        <div className="space-y-4">
+          <div className="relative aspect-4/3">
             <Image
               src="/mars.jpg"
               alt="Mars"
               fill
               priority
               className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 33vw"
             />
           </div>
 
@@ -243,26 +246,6 @@ export default function Home() {
               © {new Date().getFullYear()} Pathway To Space Info. All rights
               reserved.
             </p>
-            <div className="flex gap-4">
-              <Link
-                href="/privacy"
-                className="hover:text-foreground transition-colors"
-              >
-                Privacy Policy
-              </Link>
-              <Link
-                href="/terms"
-                className="hover:text-foreground transition-colors"
-              >
-                Terms of Use
-              </Link>
-              <Link
-                href="/contact"
-                className="hover:text-foreground transition-colors"
-              >
-                Contact
-              </Link>
-            </div>
           </div>
         </div>
       </footer>
