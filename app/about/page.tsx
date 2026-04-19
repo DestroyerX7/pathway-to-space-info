@@ -28,7 +28,7 @@ export default function About() {
             <h2 className="text-2xl font-serif">Our Mission</h2>
             <Separator />
             <p className="text-muted-foreground leading-relaxed">
-              Space exploration is one of humanity's greatest achievements, yet
+              Space exploration is one of humanity&apos;s greatest achievements, yet
               the history, science, and ambition behind it can feel distant or
               overwhelming. Pathway To Space Info exists to close that gap —
               breaking down complex missions, spacecraft, and discoveries into
@@ -37,7 +37,7 @@ export default function About() {
           </div>
 
           <div className="flex flex-col gap-4">
-            <h2 className="text-2xl font-serif">What You'll Find Here</h2>
+            <h2 className="text-2xl font-serif">What You&apos;ll Find Here</h2>
             <Separator />
             <p className="text-muted-foreground leading-relaxed">
               From the Apollo Moon landings of the 1960s to the Artemis program
@@ -54,7 +54,7 @@ export default function About() {
             <Separator />
             <p className="text-muted-foreground leading-relaxed">
               No background in science or engineering is required. Whether
-              you're a student doing research, a parent exploring with your
+              you&apos;re a student doing research, a parent exploring with your
               kids, or simply someone who looked up at the night sky and wanted
               to know more — this site is for you. Every article is written to
               inform, inspire, and invite you to look a little further.

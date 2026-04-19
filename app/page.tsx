@@ -45,10 +45,10 @@ export default function Home() {
           <p>
             On July 16, 1969, a Saturn V rocket carrying Neil Armstrong, Buzz
             Aldrin, and Michael Collins lifted off from Kennedy Space Center,
-            fulfilling President Kennedy's 1961 challenge to land on the Moon
-            before decade's end. Four days later, Armstrong and Aldrin descended
+            fulfilling President Kennedy&apos;s 1961 challenge to land on the Moon
+            before decade&apos;s end. Four days later, Armstrong and Aldrin descended
             to the lunar surface in the Eagle, while Collins orbited above in
-            the command module Columbia. Armstrong's first steps were broadcast
+            the command module Columbia. Armstrong&apos;s first steps were broadcast
             live to an estimated 600 million viewers — making it one of the
             most-watched television events in history. The crew returned safely
             to Earth on July 24, completing an eight-day mission that defined a
@@ -95,8 +95,8 @@ export default function Home() {
           </div>
 
           <p>
-            Mars, the fourth planet from the Sun, earned its nickname "the Red
-            Planet" because iron minerals in its soil oxidize, or rust, giving
+            Mars, the fourth planet from the Sun, earned its nickname &quot;the Red
+            Planet&quot; because iron minerals in its soil oxidize, or rust, giving
             the surface its distinctive color. Though cold and desert-like
             today, NASA missions have found compelling evidence that Mars was
             once warmer and wetter, with ancient riverbeds, lake beds, and
@@ -120,7 +120,7 @@ export default function Home() {
           <h1 className="text-6xl font-bold">Artemis</h1>
 
           <p className="text-xl">
-            Learn about NASA's plan to send astronauts on increasingly difficult
+            Learn about NASA&apos;s plan to send astronauts on increasingly difficult
             missions to explore more of the Moon for scientific discovery,
             economic benefits, and to build on our foundation for the first
             crewed missions to Mars.
@@ -146,7 +146,7 @@ export default function Home() {
                 Pathway To Space Info
               </h2>
               <p className="text-sm text-muted-foreground">
-                Tracking humanity's journey beyond Earth — from the Moon
+                Tracking humanity&apos;s journey beyond Earth — from the Moon
                 landings to Mars and beyond.
               </p>
             </div>
@@ -241,7 +241,7 @@ export default function Home() {
           </div>
 
           {/* Bottom row */}
-          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between border-t border-border pt-6 text-sm text-muted-foreground">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between border-t border-border pt-8 text-sm text-muted-foreground">
             <p>
               © {new Date().getFullYear()} Pathway To Space Info. All rights
               reserved.

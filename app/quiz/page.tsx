@@ -5,12 +5,16 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { QuizQuestion, quizQuestions } from "@/lib/quiz-questions";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Quiz() {
+  const getRandomQuizQuestions = () => {
+    return quizQuestions.toSorted(() => Math.random() - 0.5).slice(0, 10);
+  };
+
   const [selectedQuizQuestions, setSelectedQuizQuestions] = useState<
     QuizQuestion[]
-  >([]);
+  >(() => getRandomQuizQuestions());
 
   const [selectedAnswers, setSelectedAnswers] = useState<string[]>(
     Array(10).fill(""),
@@ -19,24 +23,12 @@ export default function Quiz() {
   const [submitted, setSubmitted] = useState(false);
   const [numCorrect, setNumCorrect] = useState(0);
 
-  const randomizeQuizQuestions = () => {
-    const randomQuizQuestions = quizQuestions
-      .toSorted((_) => Math.random() - 0.5)
-      .slice(0, 10);
-
-    setSelectedQuizQuestions(randomQuizQuestions);
-  };
-
-  useEffect(() => {
-    randomizeQuizQuestions();
-  }, []);
-
   const selectAnswer = (answer: string, index: number) => {
     if (submitted) {
       return;
     }
 
-    const updatedSelectedAnswers = selectedAnswers;
+    const updatedSelectedAnswers = [...selectedAnswers];
     updatedSelectedAnswers[index] = answer;
     setSelectedAnswers(updatedSelectedAnswers);
   };
@@ -130,7 +122,7 @@ export default function Quiz() {
               variant="secondary"
               className="cursor-pointer"
               onClick={() => {
-                randomizeQuizQuestions();
+                setSelectedQuizQuestions(getRandomQuizQuestions());
                 setSelectedAnswers(Array(10).fill(""));
                 setNumCorrect(0);
                 setSubmitted(false);

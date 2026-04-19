@@ -228,9 +228,9 @@ export default function SpaceShuttle() {
             Sandy Magnus and Rex Walheim made up the final Shuttle crew. When
             Atlantis touched down at Kennedy Space Center in the early morning
             darkness, it ended an era. Ferguson&apos;s words to Mission Control
-            became the program&apos;s epitaph: "Mission complete, Houston. After
+            became the program&apos;s epitaph: &quot;Mission complete, Houston. After
             serving the world&apos;s greatest team, it&apos;s time to put her to
-            bed."
+            bed.&quot;
           </p>
         </section>
 

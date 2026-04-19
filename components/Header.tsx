@@ -37,7 +37,7 @@ export default function Header({ className }: Props) {
                 <NavigationMenuLink asChild>
                   <Link href="/learn">
                     <div className="flex flex-col">
-                      <h2 className="font-semibold">Expore</h2>
+                      <h2 className="font-semibold">Explore</h2>
                       <p className="text-muted-foreground">
                         All learning pages
                       </p>

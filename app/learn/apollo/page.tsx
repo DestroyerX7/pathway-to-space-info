@@ -153,7 +153,7 @@ export default function Apollo() {
           <p className="leading-relaxed">
             On Christmas Eve, the crew broadcast live from lunar orbit, reading
             from the Book of Genesis to an estimated one billion viewers.
-            William Anders also captured "Earthrise" — a photograph of the Earth
+            William Anders also captured &quot;Earthrise&quot; — a photograph of the Earth
             appearing over the lunar horizon — which became one of the most
             influential environmental images ever taken, showing our planet as a
             fragile blue marble suspended in the void.
@@ -174,8 +174,8 @@ export default function Apollo() {
             With just 30 seconds of fuel remaining after navigating past a
             boulder field, Eagle touched down at 20:17 UTC on July 20, 1969. Six
             hours later, Neil Armstrong descended the ladder and became the
-            first human to walk on another world. "That&apos;s one small step
-            for a man, one giant leap for mankind," he said. Buzz Aldrin joined
+            first human to walk on another world. &quot;That&apos;s one small step
+            for a man, one giant leap for mankind,&quot; he said. Buzz Aldrin joined
             him minutes later. Michael Collins, unable to see the historic
             moment, orbited silently overhead, alone on the far side of the
             Moon.
@@ -183,8 +183,8 @@ export default function Apollo() {
           <p className="leading-relaxed">
             The two moonwalkers spent about two and a half hours on the surface,
             collecting 47.5 pounds of lunar samples and planting an American
-            flag. They also left a plaque reading: "We came in peace for all
-            mankind."
+            flag. They also left a plaque reading: &quot;We came in peace for all
+            mankind.&quot;
           </p>
         </section>
 
@@ -201,8 +201,8 @@ export default function Apollo() {
           <p className="leading-relaxed">
             Apollo 13, launched in April 1970, nearly ended in catastrophe when
             an oxygen tank in the Service Module exploded on the way to the
-            Moon. Commander Jim Lovell&apos;s now-famous words — "Houston,
-            we&apos;ve had a problem" — set off one of the most dramatic rescues
+            Moon. Commander Jim Lovell&apos;s now-famous words — &quot;Houston,
+            we&apos;ve had a problem&quot; — set off one of the most dramatic rescues
             in history. The crew shut down the Command Module, used the Lunar
             Module as a lifeboat, and looped around the Moon before splashing
             down safely on April 17. No Moon landing was made, but no lives were
@@ -227,8 +227,8 @@ export default function Apollo() {
             lunar surface across three excursions — the longest surface stay of
             the program. Before climbing back into the Lunar Module for the last
             time, Cernan paused and scratched his daughter&apos;s initials — TDC
-            — into the lunar dust. Then he said: "We leave as we came, and, God
-            willing, as we shall return."
+            — into the lunar dust. Then he said: &quot;We leave as we came, and, God
+            willing, as we shall return.&quot;
           </p>
           <p className="leading-relaxed">
             When Cernan lifted off, he became the last human to stand on the
@@ -243,8 +243,8 @@ export default function Apollo() {
           <p className="leading-relaxed">
             The Apollo program returned 842 pounds of lunar rock and soil from
             six landing sites. Analysis of those samples transformed our
-            understanding of the Moon&apos;s origin — supporting the "giant
-            impact hypothesis" that the Moon formed from debris after a
+            understanding of the Moon&apos;s origin — supporting the &quot;giant
+            impact hypothesis&quot; that the Moon formed from debris after a
             Mars-sized object collided with the early Earth.
           </p>
           <p className="leading-relaxed">
