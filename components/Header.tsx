@@ -34,78 +34,92 @@ export default function Header({ className }: Props) {
             <NavigationMenuTrigger>Learn</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="w-32">
-                <NavigationMenuLink asChild>
-                  <Link href="/learn">
-                    <div className="flex flex-col">
-                      <h2 className="font-semibold">Explore</h2>
-                      <p className="text-muted-foreground">
-                        All learning pages
-                      </p>
-                    </div>
-                  </Link>
-                </NavigationMenuLink>
+                <li>
+                  <NavigationMenuLink asChild>
+                    <Link href="/learn">
+                      <div className="flex flex-col">
+                        <h2 className="font-semibold">Explore</h2>
+                        <p className="text-muted-foreground">
+                          All learning pages
+                        </p>
+                      </div>
+                    </Link>
+                  </NavigationMenuLink>
+                </li>
 
-                <NavigationMenuLink asChild>
-                  <Link href="/learn/apollo">
-                    <div className="flex flex-col">
-                      <h2 className="font-semibold">Apollo</h2>
-                      <p className="text-muted-foreground">Moon program</p>
-                    </div>
-                  </Link>
-                </NavigationMenuLink>
+                <li>
+                  <NavigationMenuLink asChild>
+                    <Link href="/learn/apollo">
+                      <div className="flex flex-col">
+                        <h2 className="font-semibold">Apollo</h2>
+                        <p className="text-muted-foreground">Moon program</p>
+                      </div>
+                    </Link>
+                  </NavigationMenuLink>
+                </li>
 
-                <NavigationMenuLink asChild>
-                  <Link href="/learn/artemis">
-                    <div className="flex flex-col">
-                      <h2 className="font-semibold">Artemis</h2>
-                      <p className="text-muted-foreground">
-                        Future of moon exploration
-                      </p>
-                    </div>
-                  </Link>
-                </NavigationMenuLink>
+                <li>
+                  <NavigationMenuLink asChild>
+                    <Link href="/learn/artemis">
+                      <div className="flex flex-col">
+                        <h2 className="font-semibold">Artemis</h2>
+                        <p className="text-muted-foreground">
+                          Future of moon exploration
+                        </p>
+                      </div>
+                    </Link>
+                  </NavigationMenuLink>
+                </li>
 
-                <NavigationMenuLink asChild>
-                  <Link href="/learn/space-shuttle">
-                    <div className="flex flex-col">
-                      <h2 className="font-semibold">Space Shuttle</h2>
-                      <p className="text-muted-foreground">
-                        Reuseable space plane
-                      </p>
-                    </div>
-                  </Link>
-                </NavigationMenuLink>
+                <li>
+                  <NavigationMenuLink asChild>
+                    <Link href="/learn/space-shuttle">
+                      <div className="flex flex-col">
+                        <h2 className="font-semibold">Space Shuttle</h2>
+                        <p className="text-muted-foreground">
+                          Reuseable space plane
+                        </p>
+                      </div>
+                    </Link>
+                  </NavigationMenuLink>
+                </li>
 
-                <NavigationMenuLink asChild>
-                  <Link href="/learn/iss">
-                    <div className="flex flex-col">
-                      <h2 className="font-semibold">ISS</h2>
-                      <p className="text-muted-foreground">Space labratory</p>
-                    </div>
-                  </Link>
-                </NavigationMenuLink>
+                <li>
+                  <NavigationMenuLink asChild>
+                    <Link href="/learn/iss">
+                      <div className="flex flex-col">
+                        <h2 className="font-semibold">ISS</h2>
+                        <p className="text-muted-foreground">Space labratory</p>
+                      </div>
+                    </Link>
+                  </NavigationMenuLink>
+                </li>
 
-                <NavigationMenuLink asChild>
-                  <Link href="/learn/solar-system">
-                    <div className="flex flex-col">
-                      <h2 className="font-semibold">Solar System</h2>
-                      <p className="text-muted-foreground">
-                        Planets, moons, and more
-                      </p>
-                    </div>
-                  </Link>
-                </NavigationMenuLink>
+                <li>
+                  <NavigationMenuLink asChild>
+                    <Link href="/learn/solar-system">
+                      <div className="flex flex-col">
+                        <h2 className="font-semibold">Solar System</h2>
+                        <p className="text-muted-foreground">
+                          Planets, moons, and more
+                        </p>
+                      </div>
+                    </Link>
+                  </NavigationMenuLink>
+                </li>
 
-                <NavigationMenuLink asChild>
-                  <Link href="/learn/universe">
-                    <div className="flex flex-col">
-                      <h2 className="font-semibold">Universe</h2>
-                      <p className="text-muted-foreground">
-                        Stars, galaxies, and more
-                      </p>
-                    </div>
-                  </Link>
-                </NavigationMenuLink>
+                <li>
+                  <NavigationMenuLink asChild>
+                    <Link href="/learn/universe">
+                      <div className="flex flex-col">
+                        <h2 className="font-semibold">Universe</h2>
+                        <p className="text-muted-foreground">
+                          Stars, galaxies, and more
+                        </p>
+                      </div>
+                    </Link>
+                  </NavigationMenuLink>
+                </li>
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>

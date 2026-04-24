@@ -28,9 +28,9 @@ export default function About() {
             <h2 className="text-2xl font-serif">Our Mission</h2>
             <Separator />
             <p className="text-muted-foreground leading-relaxed">
-              Space exploration is one of humanity&apos;s greatest achievements, yet
-              the history, science, and ambition behind it can feel distant or
-              overwhelming. Pathway To Space Info exists to close that gap —
+              Space exploration is one of humanity&apos;s greatest achievements,
+              yet the history, science, and ambition behind it can feel distant
+              or overwhelming. Pathway To Space Info exists to close that gap —
               breaking down complex missions, spacecraft, and discoveries into
               clear, engaging stories that anyone can follow and appreciate.
             </p>

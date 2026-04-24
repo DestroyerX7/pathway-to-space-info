@@ -67,7 +67,7 @@ export default function Quiz() {
 
               {submitted && (
                 <p>
-                  {selectedAnswers[i] ==
+                  {selectedAnswers[i] ===
                   quizQuestion.answers[quizQuestion.correctAnswerIndex]
                     ? "1"
                     : "0"}
@@ -79,19 +79,21 @@ export default function Quiz() {
             <RadioGroup
               onValueChange={(answer) => selectAnswer(answer, i)}
               disabled={submitted}
+              value={selectedAnswers[i]}
             >
               {quizQuestion.answers.map((answer) => (
-                <div
+                <Label
+                  htmlFor={quizQuestion.question + answer}
                   key={answer}
                   className={
                     "flex items-center gap-4 p-4 rounded border " +
                     (submitted &&
-                    answer ==
+                    answer ===
                       quizQuestion.answers[quizQuestion.correctAnswerIndex]
                       ? "bg-green-950 border-green-700"
                       : submitted &&
-                          answer == selectedAnswers[i] &&
-                          answer !=
+                          answer === selectedAnswers[i] &&
+                          answer !==
                             quizQuestion.answers[
                               quizQuestion.correctAnswerIndex
                             ]
@@ -103,37 +105,37 @@ export default function Quiz() {
                     value={answer}
                     id={quizQuestion.question + answer}
                   />
-                  <Label htmlFor={quizQuestion.question + answer}>
-                    {answer}
-                  </Label>
-                </div>
+                  {answer}
+                </Label>
               ))}
             </RadioGroup>
           </div>
         ))}
 
-        <div className="flex gap-4">
-          <Button className="cursor-pointer" onClick={submit}>
-            Submit
-          </Button>
+        <div className="space-y-4">
+          {submitted && <p>Final Score: {numCorrect}/10</p>}
 
-          {submitted && (
-            <Button
-              variant="secondary"
-              className="cursor-pointer"
-              onClick={() => {
-                setSelectedQuizQuestions(getRandomQuizQuestions());
-                setSelectedAnswers(Array(10).fill(""));
-                setNumCorrect(0);
-                setSubmitted(false);
-              }}
-            >
-              Retry
+          <div className="flex gap-4">
+            <Button className="cursor-pointer" onClick={submit}>
+              Submit
             </Button>
-          )}
-        </div>
 
-        {submitted && <p>{numCorrect}/10</p>}
+            {submitted && (
+              <Button
+                variant="secondary"
+                className="cursor-pointer"
+                onClick={() => {
+                  setSelectedQuizQuestions(getRandomQuizQuestions());
+                  setSelectedAnswers(Array(10).fill(""));
+                  setNumCorrect(0);
+                  setSubmitted(false);
+                }}
+              >
+                Retry
+              </Button>
+            )}
+          </div>
+        </div>
       </div>
     </>
   );
